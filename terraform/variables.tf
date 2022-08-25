@@ -1,7 +1,7 @@
 # prefix should be globally unique. Some characters seem to cause issues;
 # Something like yourorg_munki might be a good prefix.
 variable "prefix" {
-  default = no_time_for_change
+  default = "fpvman-munki"
 }
 
 # you'd need to change this only if you have an existing bucket named
@@ -18,10 +18,10 @@ variable "price_class" {
 
 # the username your Munki clients will use for BasicAuthentication
 variable "username" {
-  default = munkiuser
+  default = "munkiuser"
 }
 
 # the password your Munki clients will use for BasicAuthentication
 variable "password" {
-  default = munki99$
+  default = "munki99$"
 }
