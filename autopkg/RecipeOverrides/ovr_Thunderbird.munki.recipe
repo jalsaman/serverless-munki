@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.ovr_Thunderbird</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO</key>
+		<string>""</string>
+		<key>MUNKI_REPO_PLUGIN</key>
+		<string>SimpleMDMRepo</string>
+		<key>extract_icon</key>
+		<true/>
+		<key>LOCALE</key>
+		<string>en_US</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/thunderbird</string>
+		<key>NAME</key>
+		<string>Thunderbird</string>
+		<key>RELEASE</key>
+		<string>latest</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Mozilla Thunderbird is a free and open source mail client.</string>
+			<key>display_name</key>
+			<string>Mozilla Thunderbird</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.thunderbird</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>MozillaURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a28e56e90ebc52512a4b7ec8fe1981bf02e92bc5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/com.github.autopkg.recipes/Mozilla/MozillaURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>c4ce035b1a629c4925a80003899fcf39480e5224b3015613440f07ab96211f17</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.thunderbird</key>
+			<dict>
+				<key>git_hash</key>
+				<string>00f9b0ea8aa77716c0875f9aff6f1281cbf8d84d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/com.github.autopkg.recipes/Mozilla/Thunderbird.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>24688c463239feeea2477152f722b4f1e5ef0c0c5c65bed4e98ac54492ea29e2</string>
+			</dict>
+			<key>com.github.autopkg.munki.thunderbird</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b8ebd97b7fc92cc4a9dc382ccc2ff8090c1b8f21</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/com.github.autopkg.recipes/Mozilla/Thunderbird.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>33d0936a9006eb59d9896090397c7a0cc222eca276d0f6cb8984a1f2af922792</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
