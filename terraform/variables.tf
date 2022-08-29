@@ -23,5 +23,5 @@ variable "username" {
 
 # the password your Munki clients will use for BasicAuthentication
 variable "password" {
-  default = "munki99$"
+  default = munki99$
 }
